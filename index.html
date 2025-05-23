@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Portfolio with Hanging Card</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Load Three.js and GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section with 3D Card -->
+  <section id="hero">
+    <h1 id="hero-text">PORTFOLIO</h1>
+    <!-- Three.js canvas will be inserted here -->
+  </section>
+
+  <!-- Other Sections -->
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>I'm a 3D designer and developer specializing in interactive experiences.</p>
+  </section>
+
+  <section id="projects" class="content-section">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">Project 1</div>
+      <div class="project-card">Project 2</div>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

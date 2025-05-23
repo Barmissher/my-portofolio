@@ -1,0 +1,73 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: #0f0f1a;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  #navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  #hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #hero-text {
+    font-size: 5rem;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  /* Content Sections */
+  .content-section {
+    min-height: 100vh;
+    padding: 100px 20px;
+  }
+  
+  #about { background: #1a1a2e; }
+  #projects { background: #2b2b4a; }
+  #contact { background: #3d3d5c; }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Canvas Positioning */
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
