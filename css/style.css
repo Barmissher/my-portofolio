@@ -1,0 +1,57 @@
+/* Reset Default Margin/Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  background: #333;
+  padding: 1rem 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center; /* Tengahkan navbar */
+  list-style: none;
+  gap: 2rem; /* Jarak antar menu */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Animasi Hover */
+.nav-links a:hover {
+  background: #575757;
+  transform: translateY(-3px);
+}
+
+/* Section Konten */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home {
+  background: #3498db;
+  color: white;
+}
